@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda y Ropa - Mi Bazar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Bazar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hogar.html">Hogar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ropa.html">Moda y Ropa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="deportes.html">Deportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="electronica.html">Electrónica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calzado.html">Calzado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="creador.html">Creador de la página</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light py-3">
+        <div class="container text-center">
+            <h1 class="animate__animated animate__fadeIn">Bienvenido a la sección de Moda y Ropa</h1>
+            <p>Explora nuestra colección de prendas únicas y modernas para todos los estilos y ocasiones.</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <h1 class="text-center">Moda y Ropa</h1>
+        <p class="text-center">Encuentra las últimas tendencias y prendas clásicas en nuestro bazar. Tenemos algo para todos: ropa casual, formal, deportiva y mucho más.</p>
+
+        <div id="carouselRopa" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="r1.jpg" class="d-block w-100" alt="Camisas modernas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Camisas modernas</h5>
+                        <p>Perfectas para cualquier ocasión.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="r2.jpg" class="d-block w-100" alt="Vestidos elegantes">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Vestidos elegantes</h5>
+                        <p>Estilo y sofisticación a tu alcance.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="r3.jpg" class="d-block w-100" alt="Ropa deportiva">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ropa deportiva</h5>
+                        <p>Confort y rendimiento.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRopa" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselRopa" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <main class="row mt-5">
+            <div class="col-md-8">
+                <h2>Nuestro catálogo</h2>
+                <p>Descubre nuestra selección de ropa para toda la familia. Ofrecemos prendas de alta calidad a precios competitivos. Renueva tu guardarropa con nuestras colecciones de temporada.</p>
+
+                <section>
+                    <h3>Novedades</h3>
+                    <ul>
+                        <li>Colección primavera-verano</li>
+                        <li>Ropa sostenible y ecológica</li>
+                        <li>Ofertas exclusivas en prendas seleccionadas</li>
+                        <li>Nuevos diseños cada semana</li>
+                    </ul>
+                </section>
+
+                <article>
+                    <h3>Beneficios de comprar con nosotros</h3>
+                    <p>Garantizamos calidad, estilo y precios accesibles. Además, todas las compras incluyen opciones de cambio y devolución.</p>
+                </article>
+
+                <section>
+                    <h3>Consejos de moda</h3>
+                    <p>Sigue nuestras guías de estilo para combinar colores, elegir accesorios y lucir espectacular en cualquier ocasión.</p>
+                </section>
+            </div>
+
+            <aside class="col-md-4">
+                <h3>Promociones</h3>
+                <ul>
+                    <li>3x2 en camisetas</li>
+                    <li>20% de descuento en vestidos</li>
+                    <li>Envío gratis en compras mayores a $800</li>
+                    <li>Descuentos adicionales para estudiantes</li>
+                </ul>
+                <h3>Contacto</h3>
+                <p>¿Tienes preguntas? Escríbenos a <a href="mailto:contacto@mibazar.com">contacto@mibazar.com</a></p>
+                <p>O llámanos al <a href="tel:+520123456789">+52 012 3456 789</a></p>
+            </aside>
+        </main>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Mi Bazar. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="#" class="text-white"><i class="bi bi-facebook"></i> Facebook</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i> Twitter</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

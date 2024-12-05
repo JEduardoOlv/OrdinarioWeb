@@ -1,0 +1,209 @@
+/* Estilos mejorados */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+    background: linear-gradient(45deg, #343a40, #f7522e);
+    border-bottom: 3px solid #f9856c;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #f7522e;
+    font-weight: bold;
+    animation: bounceIn 2s ease-in-out;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.lead {
+    color: #444;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.section-box {
+    background: linear-gradient(135deg, #ffffff, #f4f4f4);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    margin: 15px 0;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.section-box h3 {
+    color: #343a40;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #212529;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    border-top: 2px solid #f7522e;
+}
+
+/* Tipos de letra personalizados */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f7522e, #f9856c);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Fondo animado */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f7522e, #f9856c, #ffcccc);
+    z-index: -1;
+    animation: gradientShift 5s infinite alternate;
+}
+
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(135deg, #f7522e, #f9856c, #ffcccc);
+    }
+    100% {
+        background: linear-gradient(135deg, #f9856c, #f7522e, #ffaaaa);
+    }
+}
+
+/* Nuevas animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Botones personalizados */
+.button {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #f7522e;
+    transform: scale(1.1);
+}
+
+/* Enlaces animados */
+a {
+    color: #f7522e;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #343a40;
+    transform: translateY(-3px);
+}
+
+/* Nuevos estilos con Bootstrap */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.alert {
+    padding: 15px;
+    background-color: #f9856c;
+    color: white;
+    border-radius: 5px;
+    animation: bounceIn 1.5s ease;
+}
+
+/* Componentes adicionales de Bootstrap */
+.btn-primary {
+    background-color: #f7522e;
+    border-color: #f7522e;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #f7522e, #f9856c);
+    animation: progressAnim 3s infinite;
+}
+
+@keyframes progressAnim {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
